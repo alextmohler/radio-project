@@ -3,5 +3,12 @@ A collection of python files which cuts up a YouTube video's audio and inserts a
 It currently only works with the WAN Show podcast by Linus Tech Tips, and any of Jupiter Broadcasting's podcasts. 
 Fortunately it is fairly simple to make strainer for timestamps, so feel free to make one for one of the podcasts that you like
 
-The project uses ffmpeg to cut up the podcast and inserts the audio of the songs downloaded with youtube-dl.
-It uses curl to get the html of the YouTube video in order to get the timestamps out of the YouTube description.
+# Requirements:
+python3 -- the entire thing is written in python3
+ffmpeg -- all of the audio editing/concatenating is done using ffmpeg
+youtube-dl -- all of the downloading is done using youtube-dl
+curl -- curl is used to download the YouTube html itself in order to get the timestamps out of the description
+
+#Output:
+Currently the program outputs one .aac file called "output.aac".
+It is in the folder "pod\_ep", which is in your current working directory.

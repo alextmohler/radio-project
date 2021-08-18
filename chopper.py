@@ -1,7 +1,7 @@
 import os, random
 def init(pod_ep):
     """download the YouTube link to an aac, and make apropriate directories for cutting it up, returns path to the aac of the podcast"""
-    os.system("youtube-dl -q --extract-audio --audio-format aac --output pod_ep.aac '" + pod_ep + "'") #downloads the YouTube video
+    os.system("youtube-dl --extract-audio --audio-format aac --output pod_ep.aac '" + pod_ep + "'") #downloads the YouTube video
     os.mkdir("pod_ep") #makes general directory
     os.chdir('pod_ep')
     os.system("mv ../pod_ep.aac .") #moves the podcast episode into the general directory for easy chopping
