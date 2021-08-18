@@ -4,11 +4,6 @@ def main():
     _type = str(input("Enter the podcast type [wan/jb]: ")).strip() #type of podcast: 'wan' for the WAN Show, or 'jb' for most of Jupiter Broadcasting's shows
     pod_ep = str(input("Enter the YouTube link for the podcast: ")).strip() #the YouTube link for the podcast episode
     playlist = str(input("Enter the YouTube link for the music playlist: ")).strip() #the link to the YouTube playlist
-
-    #debugging variables to get rid of input
-    _type = "jb"
-    pod_ep = "https://www.youtube.com/watch?v=74LHkG5LYWs"
-    playlist = "https://www.youtube.com/watch?v=RxgOFdJYjXo&list=RDRxgOFdJYjXo&start_radio=1&rv=RxgOFdJYjXo&t=0"
     timestamps = []
 
     #straining out the timestamps according to which type of podcast is entered
