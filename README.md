@@ -4,10 +4,10 @@ It currently only works with the WAN Show podcast by Linus Tech Tips, and any of
 Fortunately it is fairly simple to make strainer for timestamps, so feel free to make one for one of the podcasts that you like
 
 # Requirements:
-python3 -- the entire thing is written in python3
-ffmpeg -- all of the audio editing/concatenating is done using ffmpeg
-youtube-dl -- all of the downloading is done using youtube-dl
-curl -- curl is used to download the YouTube html itself in order to get the timestamps out of the description
+python3 -- the entire thing is written in python3 <br />
+ffmpeg -- all of the audio editing/concatenating is done using ffmpeg <br />
+youtube-dl -- all of the downloading is done using youtube-dl <br/>
+curl -- curl is used to download the YouTube html itself in order to get the timestamps out of the description <br/>
 
 #Output:
 Currently the program outputs one .aac file called "output.aac".
